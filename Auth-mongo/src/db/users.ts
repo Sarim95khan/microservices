@@ -22,8 +22,8 @@ export const UserModel = mongoose.model('User', UserSchema);
 
 export const getUser = () => UserModel.find();
 export const getUserByEmail = (email: string) => UserModel.findOne({ email });
-export const getUserBySessionToke = (sessionToken: string) =>
-  UserModel.findOne({ 'authntication.sessionToken': sessionToken });
+export const getUserBySessionToken = (sessionToken: string) =>
+  UserModel.findOne({ 'authentication.sessionToken': sessionToken });
 export const getUserById = (id: string) => UserModel.findById(id);
 export const createUser = async (values: Record<string, any>) => {
   const user = await new UserModel(values).save();

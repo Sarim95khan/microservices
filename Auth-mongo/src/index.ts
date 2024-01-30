@@ -33,11 +33,11 @@ app.get('/', (req, res) => {
   res.send('Hello World from Auth-Microservice!');
 });
 
-app.get('/users', async (req, res) => {
-  const users = await getUser();
-  console.log(users);
-  res.send(users);
-});
+// app.get('/users', async (req, res) => {
+//   const users = await getUser();
+//   console.log(users);
+//   res.send(users);
+// });
 
 app.get('/users/:id', async (req, res) => {
   const { id } = req.params;
