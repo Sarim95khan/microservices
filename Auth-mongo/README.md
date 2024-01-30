@@ -11,11 +11,12 @@ Multer (for Image upload)
 Sharp (for Image resize)
 
 **_ About Auth Service _**
--I used Model, View & Controller
--Controller folder: control the router logic
--Middlewares folder: control the middlware logic
--helpers folder: container required functions
--db folder: Schema of USER
+
+1. I used Model, View & Controller
+2. -Controller folder: control the router logic
+3. Middlewares folder: control the middlware logic
+4. helpers folder: container required functions
+5. db folder: Schema of USER
 
 ## Running a MongoDB Docker container
 
