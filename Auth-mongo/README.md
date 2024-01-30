@@ -10,7 +10,7 @@ Docker (for running MongoDB container)
 Multer (for Image upload)
 Sharp (for Image resize)
 
-** About Auth Service **
+**_ About Auth Service _**
 -I used Model, View & Controller
 -Controller folder: control the router logic
 -Middlewares folder: control the middlware logic
@@ -67,7 +67,9 @@ Make tsconfig.ts:
   "include": ["src/**/*"]
 }
 ```
+
 Make nodemon.json
+
 ```
 {
   "watch": ["src"],
