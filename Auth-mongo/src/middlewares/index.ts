@@ -46,7 +46,7 @@ export const isOwner = async (
     if (currentUserId.toString() !== id) {
       return res.sendStatus(403);
     }
-    merge(req, { identity: get(req, 'identity') });
+
     next();
   } catch (error) {
     console.log(error);
